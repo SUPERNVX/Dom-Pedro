@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from '../utils/gsap';
+import { asset } from '../utils/asset';
 
 export default function Footer() {
   const footerRef = useRef<HTMLElement>(null);
@@ -27,7 +28,7 @@ export default function Footer() {
     <footer ref={footerRef} className="footer">
       <div className="footer__top">
         <div className="footer__brand">
-          <img src="/optimized/logo.webp" alt="Persianas Dom Pedro" className="footer__logo-img" />
+          <img src={asset('optimized/logo.webp')} alt="Persianas Dom Pedro" className="footer__logo-img" />
           <p className="footer__tagline">
             Cortinas & Persianas — Tradição artesanal desde 1992.
           </p>

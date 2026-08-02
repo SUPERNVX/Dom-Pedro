@@ -1,14 +1,15 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { gsap } from '../utils/gsap';
 import { getLenis } from '../hooks/useSmoothScroll';
+import { asset } from '../utils/asset';
 
 const galleryItems = [
-  { image: '/optimized/IMG_7648.webp', span: 'wide' },
-  { image: '/optimized/IMG_7737.webp', span: 'tall' },
-  { image: '/optimized/IMG_7736.webp', span: 'normal' },
-  { image: '/optimized/IMG_7664.webp', span: 'normal' },
-  { image: '/optimized/IMG_7650.webp', span: 'tall' },
-  { image: '/optimized/IMG_7651.webp', span: 'wide' },
+  { image: asset('optimized/IMG_7648.webp'), span: 'wide' },
+  { image: asset('optimized/IMG_7737.webp'), span: 'tall' },
+  { image: asset('optimized/IMG_7736.webp'), span: 'normal' },
+  { image: asset('optimized/IMG_7664.webp'), span: 'normal' },
+  { image: asset('optimized/IMG_7650.webp'), span: 'tall' },
+  { image: asset('optimized/IMG_7651.webp'), span: 'wide' },
 ];
 
 export default function Gallery() {

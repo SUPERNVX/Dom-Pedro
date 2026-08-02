@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from '../utils/gsap';
+import { asset } from '../utils/asset';
 
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -83,7 +84,7 @@ export default function About() {
         <div ref={imageRef} className="about__image">
           <div className="about__image-inner">
             <img
-              src="/optimized/IMG_7664.webp"
+              src={asset('optimized/IMG_7664.webp')}
               alt="Loja Dom Pedro — Cortinas e Persianas Artesanais"
               loading="lazy"
             />

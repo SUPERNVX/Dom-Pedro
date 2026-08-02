@@ -1,9 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '../utils/gsap';
 import { splitTextToChars } from '../utils/splitText';
+import { asset } from '../utils/asset';
 
-const HERO_IMAGE = '/optimized/exterior.webp';
-const BG_IMAGE = '/optimized/interior.webp';
+const HERO_IMAGE = asset('optimized/exterior.webp');
+const BG_IMAGE = asset('optimized/interior.webp');
 
 export default function Hero() {
   const titleRef = useRef<HTMLHeadingElement>(null);

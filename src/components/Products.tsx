@@ -1,17 +1,18 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from '../utils/gsap';
+import { asset } from '../utils/asset';
 
 const cortinas = [
   {
     title: 'Cortinas Romanas',
     description: 'Elegância clássica com linhas limpas. Perfeitas para salas e escritórios, disponíveis em algodão, linho e seda natural.',
-    image: '/optimized/IMG_7740.webp',
+    image: asset('optimized/IMG_7740.webp'),
     tags: ['Linho', 'Algodão', 'Seda'],
   },
   {
     title: 'Cortinas de Dobra',
     description: 'Tecidos que dançam com a luz. Nossa especialidade em pregas francesas, twin pleat e ondas perfeitas.',
-    image: '/optimized/IMG_7742.webp',
+    image: asset('optimized/IMG_7742.webp'),
     tags: ['Pregas Francesas', 'Twin Pleat', 'Ondas'],
   },
 ];
@@ -20,13 +21,13 @@ const persianas = [
   {
     title: 'Persianas Roller',
     description: 'Minimalismo funcional. Controle total de luz com tecidos blackout, telas solares e opções translúcidas.',
-    image: '/optimized/IMG_7741.webp',
+    image: asset('optimized/IMG_7741.webp'),
     tags: ['Blackout', 'Screen', 'Translúcido'],
   },
   {
     title: 'Persianas Horizontais',
     description: 'Sofisticação em alumínio e madeira. Design atemporal para ambientes corporativos e residenciais.',
-    image: '/optimized/IMG_7738.webp',
+    image: asset('optimized/IMG_7738.webp'),
     tags: ['Alumínio', 'Madeira', 'Minimalista'],
   },
 ];
